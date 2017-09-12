@@ -1,0 +1,14 @@
+.lock
+.metadata
+.recommenders
+02-discovery-service/eureka-server/.mvn
+04-circuit-breaker/zuul-gateway/.mvn
+02-discovery-service/event-frontend/.mvn
+02-discovery-service/event-service/.mvn
+03-routing-loadbalancing/eureka-server/.mvn
+03-routing-loadbalancing/event-frontend/.mvn
+03-routing-loadbalancing/zuul-gateway/.mvn
+04-circuit-breaker/event-circuitbreaker/.mvn
+04-circuit-breaker/event-frontend/.mvn
+04-circuit-breaker/hystrix-dashboard/.mvn
+04-circuit-breaker/event-service/.mvn

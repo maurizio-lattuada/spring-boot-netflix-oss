@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Event Details</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="/css/normalize.css" />
+</head>
+<body>
+	<h1>Event Details</h1>
+	<ul>
+		<li th:text=" ${event.eventDate} ">Event Date</li>
+		<li th:text=" ${event.name} ">Event Name</li>
+		<li th:text=" ${event.description} ">Event Description</li>
+	</ul>
+</body>
+</html>
