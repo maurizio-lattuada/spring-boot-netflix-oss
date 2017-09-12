@@ -20,3 +20,4 @@
 05-spring-cloud-config/event-service/.mvn
 05-spring-cloud-config/hystrix-dashboard/.mvn
 05-spring-cloud-config/zuul-gateway/.mvn
+.sonarlint
