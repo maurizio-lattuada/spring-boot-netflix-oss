@@ -21,3 +21,11 @@
 05-spring-cloud-config/hystrix-dashboard/.mvn
 05-spring-cloud-config/zuul-gateway/.mvn
 .sonarlint
+06-logging-tracing/config-server/.mvn
+06-logging-tracing/event-circuitbreaker/.mvn
+06-logging-tracing/event-frontend/.mvn
+06-logging-tracing/event-service/.mvn
+06-logging-tracing/hystrix-dashboard/.mvn
+06-logging-tracing/zipkin-server/.mvn
+06-logging-tracing/zuul-gateway/.mvn
+06-logging-tracing/eureka-server/.mvn

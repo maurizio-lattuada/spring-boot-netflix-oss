@@ -4,17 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.42talents</groupId>
-	<artifactId>zuul-gateway</artifactId>
+	<artifactId>event-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>zuul-gateway</name>
-	<description>Spring Cloud Workshop - Zuul Gateway</description>
+	<name>event-service</name>
+	<description>Spring Cloud Workshop - Event Service</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.7.RELEASE</version>
+		<version>1.5.6.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -37,35 +37,49 @@
 	</dependencyManagement>
 
 	<dependencies>
-	
-		<!-- TODO 1: Just add spring-cloud-starter-sleuth to add tracing to the 
-			log statements. You will see a difference after adding and rerunning the 
-			zuul service. When running, make sure only eureka is running too. Btw. We 
-			added for you the config in most of the other projects ourself. -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-sleuth</artifactId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 
-		<!-- TODO 5: Use spring-cloud-sleuth-zipkin to forward the logs for analisation 
-			to zipkin (over http). As before we did it for your other services too! -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
-		</dependency>
-
-		<!-- TODO 3: Make sure you have the eureka discovery client dependency 
-			so that zuul resolves service names from eureka -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-		<!-- TODO 1: Add spring-cloud-starter-zuul dependency for ZUUL Gateway 
-			API -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zuul</artifactId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 		</dependency>
 
 		<dependency>
@@ -83,5 +97,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
