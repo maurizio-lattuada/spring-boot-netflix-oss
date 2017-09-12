@@ -12,3 +12,11 @@
 04-circuit-breaker/event-frontend/.mvn
 04-circuit-breaker/hystrix-dashboard/.mvn
 04-circuit-breaker/event-service/.mvn
+05-spring-cloud-config/config-server/.mvn
+05-spring-cloud-config/eureka-server/.mvn
+05-spring-cloud-config/event-frontend/.mvn
+05-spring-cloud-config/event-service/.mvn/wrapper/maven-wrapper.properties
+05-spring-cloud-config/hystrix-dashboard/.mvn/wrapper/maven-wrapper.jar
+05-spring-cloud-config/event-service/.mvn
+05-spring-cloud-config/hystrix-dashboard/.mvn
+05-spring-cloud-config/zuul-gateway/.mvn
